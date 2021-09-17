@@ -4,7 +4,7 @@ description: Guide to using SDKs.
 
 # SDK Startup Guide
 
-### [Cloudinary Account and Credentials](cloudinary-account.md)
+### [Cloudinary Account and Credentials](node.js/node-setup/cloudinary-account.md)
 
 ### JavaScript SDK
 

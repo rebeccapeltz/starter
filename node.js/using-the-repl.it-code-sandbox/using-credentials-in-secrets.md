@@ -4,17 +4,17 @@ description: Repl.it provides a SECRET user interface to store environment varia
 
 # Using Credentials in SECRETS
 
-They code presented here will work the same for an .env file as it does for the SECRETS storage that repl.it uses.
+They code and process presented here will work the same for an .env file as it does for the SECRETS storage that repl.it uses. 
 
 When you click on the lock icon in REPL.IT, you will have an opportunity to enter CLOUDINARY\_URL as the "key" and the full URL as the "value" into the form. 
 
 ![REPL.IT Secret for Credentials](../../.gitbook/assets/secrets.jpg)
 
-If you were working in an environment that doesn't capture **SECRETS** as shown above, you would create a **.env** file and add **CLOUDINARY\_URL**_=_**cloudinary://API\_KEY:API\_SECRET@CLOUD\_NAME.**   **Best Practice:** If you do create a **.env** file in a project, be sure to add it to a **.gitignore** file so that it doesn't end up in **GitHub**. 
+If you were working in an environment that doesn't capture **SECRETS** as shown above, you would create a **.env** file and add **CLOUDINARY\_URL**_=_**cloudinary://API\_KEY:API\_SECRET@CLOUD\_NAME.**   **Best Practice:** If you do create a **.env** file in a project, be sure to add it to a **.gitignore** file so that it doesn't end up in your public repository storage. 
 
 **Making Environment Variables Available to Code**
 
-Environment variables that are stored in **SECRETS** or and **.env** file must be extracted so that they are available to the application context as process.env.&lt;environment variable&gt;.  You can use the NPM **dotenv** package to do this.  The **dotenv** config\(\) function will extract and export  environment variables stored in **SECRETS** or a **.env** file.
+Environment variables that are stored in **SECRETS** or an **.env** file must be extracted so that they are available to the application context as process.env.&lt;environment variable&gt;.  You can use the NPM **dotenv** package to do this.  The **dotenv** config\(\) function will extract and export  environment variables stored in **SECRETS** or an **.env** file.
 
 First you must install .dotenv package.  If we were working in the command shell the install would look like this:
 

@@ -24,7 +24,7 @@ The image below shows where to add your credentials in the REPL.IT sandbox.
 
 [Using Credentials from SECRET Store](using-credentials-in-secrets.md)
 
-[Using Credentials in an External Config File](using-credentials-on-the-command-line.md)
+[Using Credentials in an External Config File](using-external-config-files.md)
 
 \*\*\*\*[**Return to Node.js Setup**](../node-setup/)\*\*\*\*
 

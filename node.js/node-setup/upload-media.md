@@ -31,11 +31,11 @@ To run these scripts from inside this page
 
 {% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Video-Upload" %}
 
+[Return to Node.js](../)
 
 
 
 
-[Node Setup](./)
 
 
 

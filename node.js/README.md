@@ -8,3 +8,5 @@ The tutorial assumes that you have a free [Cloudinary Account](https://www.cloud
 
 [Node.js Setup Starter](node-setup/)
 
+[Upload Starter](node-setup/upload-media.md)
+

@@ -89,5 +89,5 @@ API_KEY
 
 
 
- [Return to Using the Repl.it Code Sandbox](using-external-config-files.md)
+ [Return to Using the Repl.it Code Sandbox](./)
 

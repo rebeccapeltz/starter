@@ -22,7 +22,7 @@ The image below shows where to add your credentials in the REPL.IT sandbox.
 
 [Using Credentials from the Command Line](using-credentials-on-the-command-line.md)
 
-[Using Credentials from SECRET Store](using-credentials-in-secrets.md)
+Using Credentials from SECRET Store
 
 Using Credentials in an External Config File
 

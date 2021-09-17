@@ -113,5 +113,5 @@ When you click on the Green button in the sandbox below, the code will run but t
 
 **NOTE: If you share the URL to your own REPL.IT  sandbox and it contains a secret, no one will be able to see your secrets.  They are only visible to the person who created them.  The person you share with will need to fork the sandbox just like you did above.**
 
-[Return to Setup](../node-setup/)
+[Return to REPL.IT Code Sandbox](./)
 

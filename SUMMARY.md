@@ -12,7 +12,7 @@
     * [Manage](node.js/node-setup/manage.md)
     * [Transform for Optimization](node.js/node-setup/transform-for-optimization.md)
     * [Transform for Aesthetics](node.js/node-setup/transform-for-aesthetics.md)
-    * [Delivery](node.js/node-setup/delivering-media.md)
+    * [Deliver](node.js/node-setup/delivering-media.md)
 * [PHP](php/README.md)
   * [REPL.IT Code Sandbox](php/repl.it-code-sandbox.md)
   * [Setup](php/setup.md)

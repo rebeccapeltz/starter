@@ -8,5 +8,5 @@ description: >-
 
 TODO - show how to set up account and get credentials
 
-[Return to Guide](./)
+[Return to Guide](../../)
 

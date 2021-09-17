@@ -10,7 +10,7 @@ Because we are not explicitly providing a unique public id or indicating that th
 
 To run these scripts from inside this page
 
-1. Click ont the Shell tab
+1. Click on the Shell tab
 2. Export your Cloudinary URL on the command line
 3. Execute `node index.js` on the command line
 4. Click on the `secure_url` in the response to see the deliver the image to the browser
@@ -23,11 +23,15 @@ To run these scripts from inside this page
 
 ### Upload Raw File
 
-
+{% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Raw-Upload" %}
 
 
 
 ### Upload Video File
+
+{% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Video-Upload" %}
+
+
 
 
 

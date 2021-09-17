@@ -20,6 +20,14 @@ The image below shows where to add your credentials in the REPL.IT sandbox.
 
 ![Adding credentials to your application context](../.gitbook/assets/replit-credentials.jpg)
 
+Using Credentials from the Command Line
+
+Using Credentials from SECRET Store
+
+Using Credentials in an External Config File
+
+### 
+
 ### Environment Variables
 
 There are 2 ways to add environment variables to the context of your application.

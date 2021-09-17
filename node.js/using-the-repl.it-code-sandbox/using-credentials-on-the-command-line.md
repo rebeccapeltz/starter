@@ -6,62 +6,27 @@ description: >-
 
 # Using Credentials on the Command Line
 
+This section helps you to see options for adding your Cloudinary credentials to the sandbox environment while maintaining security for your cloud account.
 
+### Working in a Container
 
-The CLOUDINARY\_URL contains all of the credentials you need to provide security \(APIKEY\), identify yourself \(API\_KEY\) and identify your cloud \(CLOUD\_NAME\).  They are capitalized in the URL but you'll reference them as lowercase in your code.
+Repl.it uses [container technology](https://cloud.google.com/customers/repl-it) to provide a coding environment that provides an IDE implemented with the same [technology that powers Visual Studio Code](https://www.developer.com/cloud/repl-it-an-online-editor-for-coding-or-learning/#:~:text=This%20is%20the%20same%20technology,languages%20as%20well%20as%20collaboration.), a linux command shell and console.
 
-You can locate the command shell in the sandbox and execute the following command to add CLOUDINARY\_URL to your application context. Substitute the CLOUDINARY\_URL from your Cloudinary dashboard to access your cloud programatically.  Notice that the export contains a Key/Value pair where CLOUDINARY\_URL is the key and cloudinary://APIKEY:API\_SECRET@CLOUDNAME is the value.
+We'll provide embedded code and links to serve as starters.  You need a free account on Repl.it to fork the code.  Examples that rely on the command line \(shell tab in repl.it UI\), can be executed within this document.
 
-#### Export Your Cloudinary URL in the Command Line
+### Add Cloudinary Credentials to REPL.IT Sandbox
 
-```bash
-export CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME
-echo $LCOUDINARY_URL
-```
+ We will need to supply Cloudinary Credentials in order to call functions with the Node.js SDK.  You need to make your credentials  available to the application in the code sandbox.  You can use **environment variables** to store your credentials ****or you can type our credentials into a **config file** and import the config file into your script.  If you include your credentials in a file, and you are using Git, be sure to add the file name to **.gitignore**.
 
-The command above will make the CLOUDINARY\_URL accessible in your code by referencing **process.env.CLOUDINARY\_URL**.  If you access the full URL using process.env, you will leave it capitalized.
+The image below shows where to add your credentials in the REPL.IT sandbox.
 
-```javascript
-console.log(process.env.CLOUDINARY_URL)
-```
+![Adding credentials to your application context](../../.gitbook/assets/replit-credentials.jpg)
 
-The Cloudinary config\(\) function looks for this environment variable.  It then parses the CLOUDINARY\_URL into separately accessible values like **api\_key**, **api\_secret**, and **cloud\_name**.  In the code below we log the api\_key and cloud\_name.
+[Using Credentials from the Command Line](using-credentials-on-the-command-line.md)
 
-_We must first install the NPM cloudinary library in order to use the cloudinary.config\(\) function._
+[Using Credentials from SECRET Store](using-credentials-in-secrets.md)
 
-```bash
-npm install cloudinary
-```
+[Using Credentials in an External Config File](using-external-config-files.md)
 
-With that in place we can log our public credentials.
-
-```javascript
-const cloudinary = require('cloudinary').v2
-const configuration = cloudinary.config()
-
-console.log(configuration.cloud_name)
-console.log(configuration.api_key)
-```
-
-### **Try It Out!**
-
-An embedded Repl.it sandbox is shown below.  
-
-1. Click on the tab to take you to the Command line Shell
-2. Locate the Command Line at the bottom of the embedded window
-3. We have already added the Cloudinary package so **you don't need to run** the NPM install command.
-4. Export your Cloudinary Url in the command line by entering `export CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME`
-5. Run the script form the command line by entering `node index.js` 
-6. You should see what's shown in the image below.
-7. Now try exporting the Cloudinary URL from your account and executing the script.
-
-![Export Credentials from Command Line](../../.gitbook/assets/cl-credentials.jpg)
-
-Code Sandbox to Practice Exporting Credentials on the Command Line.
-
-{% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Config-CL" %}
-
-
-
-[Return to REPL.IT Code Sandbox](./)
+\*\*\*\*[**Return to Node.js Setup**](../node-setup/)\*\*\*\*
 

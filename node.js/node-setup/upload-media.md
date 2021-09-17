@@ -8,6 +8,8 @@ There are many options available to upload images, raw and video assets.  You'll
 
 Because we are not explicitly providing a unique public id or indicating that the public id be assigned a file name, we'll get a 20 character random string for the public id. 
 
+You can copy and paste the code as well as run it from the sandbox command line.
+
 To run these scripts from inside this page
 
 1. Click on the Shell tab
@@ -15,7 +17,17 @@ To run these scripts from inside this page
 3. Execute `node index.js` on the command line
 4. Click on the `secure_url` in the response to see the deliver the image to the browser
 
+Export Cloudinary URL on the Command Line
+
+```bash
+export CLOUDINARY_URL=
+```
+
 ### Upload Image File
+
+```javascript
+https://replit.com/@rpeltz/Cld-Nodejs-Image-Upload
+```
 
 {% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Image-Upload" %}
 

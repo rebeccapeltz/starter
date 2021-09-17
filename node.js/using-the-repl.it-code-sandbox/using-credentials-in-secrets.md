@@ -4,7 +4,9 @@ description: Repl.it provides a SECRET user interface to store environment varia
 
 # Using Credentials in SECRETS
 
-They code and process presented here will work the same for an .env file as it does for the SECRETS storage that repl.it uses. 
+They code and process presented here will work the same for an .env file as it does for the SECRETS storage that repl.it uses.   You will need to [create an account on Repl.it](https://replit.com/signup?from=landing) in order to use SECRETS.
+
+#### Adding SECRETS 
 
 When you click on the lock icon in REPL.IT, you will have an opportunity to enter CLOUDINARY\_URL as the "key" and the full URL as the "value" into the form. 
 
@@ -12,7 +14,7 @@ When you click on the lock icon in REPL.IT, you will have an opportunity to ente
 
 If you were working in an environment that doesn't capture **SECRETS** as shown above, you would create a **.env** file and add **CLOUDINARY\_URL**_=_**cloudinary://API\_KEY:API\_SECRET@CLOUD\_NAME.**   **Best Practice:** If you do create a **.env** file in a project, be sure to add it to a **.gitignore** file so that it doesn't end up in your public repository storage. 
 
-**Making Environment Variables Available to Code**
+#### **Making Environment Variables Available to Code**
 
 Environment variables that are stored in **SECRETS** or an **.env** file must be extracted so that they are available to the application context as process.env.&lt;environment variable&gt;.  You can use the NPM **dotenv** package to do this.  The **dotenv** config\(\) function will extract and export  environment variables stored in **SECRETS** or an **.env** file.
 
@@ -22,64 +24,42 @@ First you must install .dotenv package.  If we were working in the command shell
 npm install dotenv
 ```
 
-However, when working in REPL.IT, we use the package manager they provide.
+However, when working in REPL.IT, we use the package manager they provide. First you would click on the **package** icon on the far left. Next you search for the package you need and then click a plus \(+\) to install the package, or the garbage icon to remove it.  Once installed, you'll see it in the package.json.
+
+![Using the repl.it Package Manager](../../.gitbook/assets/install-packages.jpg)
 
 
 
-When you use environment variables your index.js file will look like the code below.
+When you use environment variables your index.js file will look like the code below.  Before you can call cloudinary.config\(\), you need to extract the environment variables, in this case the Cloudinary URL, from SECRETS.
 
 ```javascript
-contains your API_SECRET
+// extract environmnet variables and put into 
+// process.env.CLOUDINARY_URL
 require('dotenv').config()
 
-//the cloudinary library contains Node.js code wrapping all SDK functions and utilities - you only need this if you are not using the external config file for credentials
+// the cloudinary library contains Node.js code wrapping all API
 const cloudinary = require('cloudinary').v2
 
-//log the cloudname derived from the CLOUDINARY_URL to verify cloud location
+// log the cloud name derived from the CLOUDINARY_URL 
+// to verify cloud location
 console.log(cloudinary.config().cloud_name)
 ```
 
-If my environment variable is **CLOUDINARY\_URL**_=_**cloudinary://API\_KEY:API\_SECRET@CLOUD\_NAME,**  the code above will log this to the console. 
+If your environment variable is **CLOUDINARY\_URL**_=_**cloudinary://API\_KEY:API\_SECRET@CLOUD\_NAME,**  the code above will log this to the console. 
 
 ```javascript
 cloud_name
 ```
 
-The **cloudinary config\(\)** function parses the CLOUDINARY URL to allow access to individual elements of it.
-
-We'll be using environment variables in all of the code sand boxes for this startup guide.  You can practice adding your credentials as environment variables in the REPL.IT sandbox below. Start by exporting your CLOUDINARY\_URL in the **Shell**.  Then run the index.js by  entering the following command in the shell.
-
-```bash
-node index.js
-```
-
-#### 
+The `cloudinary.config()` function parses the CLOUDINARY URL to allow access to individual elements of it.
 
 #### Forking the Code Sandbox
 
-xxx you need to read the data in e
+When you use SECRETS, the Cloudinary URL will not be available to scripts called from the command line.
 
-You will want to use an NPM package named **dotenv** to read the **process.env.CLOUDINARY\_URL** from your application context.
+Instead of running the script from the command line, you can execute it  pressing the green arrow button.  However, before you can see the green arrow button at the top center of the web page, you need to create a free account on Repl.it, fork the code and add your Cloudinary URL to SECRETS.  
 
-Install the [dotenv](https://www.npmjs.com/package/dotenv) library to enable access to environment variables in your code.  If we were working in the command shell the install would look like this:
-
-```bash
-npm install dotenv
-```
-
-However, when working in REPL.IT, we use the package manager they provide.
-
-
-
-In your application, you execute the following command to read the environment variables into your application.
-
-```javascript
-require('dotenv').config
-```
-
-
-
-If you want to use the **green arrow at the top of the sandbox** to run the code, 
+The images below walk you through the steps to get from an embeded sandbox that  
 
 ![The Green arrow can run the index.js.](../../.gitbook/assets/green-arrow.jpg)
 
@@ -101,7 +81,27 @@ Click on the Lock icon to open Secrets and enter the key \(**CLOUDINARY\_URL**\)
 
 ![Using green button to run the script](../../.gitbook/assets/cloud_name.jpg)
 
+\*\*\*\*
+
+**Let's Try It**
+
+When you click on the Green button in the sandbox below, the code will run but there will be no environment variables set up, so your code will return undefined. You need to fork the code and add your SECRETS environment variables to successfully run the code.
+
+1. Login to your replit account
+2. Click on the Green arrow and nothing happens
+3. Click on Open in replit
+4. You'll open the sandbox in a new window but the green arrow will have turned black
+5. You can view the code but you can't run it using the arrow
+6. At this point, click on Fork in the right hand corner
+7. Replit will create a copy of the sandbox in under your account
+8. Add your Cloudinary URL to SECRETS and you can use `CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME` for testing
+9. Packages will normally be setup in package.json, but you can check and add any additional packages using the Package Manager
+10. Click on the Green arrow to execute the code  using Node.js in **index.js**
+11. You should see the output under the console tab at the bottom of the page
+
+{% embed url="https://replit.com/@rpeltz/Cld-Nodejs-Config-Using-Secrets-for-env" caption="Embedded Sandbox" %}
+
 **NOTE: If you share the URL to your own REPL.IT  sandbox and it contains a secret, no one will be able to see your secrets.  They are only visible to the person who created them.  The person you share with will need to fork the sandbox just like you did above.**
 
-[Extra: Using External Config ](../using-external-config-files.md)
+[Return to Setup](../node-setup/)
 

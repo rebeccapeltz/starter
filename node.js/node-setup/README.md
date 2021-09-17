@@ -12,7 +12,7 @@ With [node installed](https://nodejs.org/en/download/) you will be able to use t
 
 The code presented in this Startup Guide will be available in REPL.IT code sandboxes.  Before you start using the Node.js SDK to **Upload, Manage, Transform and Deliver,** you should look at Using the REPL.IT Code Sandbox to see how to add credentials and run the code.
 
-[Using the REPL.IT Code Sandbox](../using-the-repl.it-code-sandbox.md)
+[Using the REPL.IT Code Sandbox](../using-the-repl.it-code-sandbox/)
 
 [Upload Starter](upload-media.md)
 

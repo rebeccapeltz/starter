@@ -164,7 +164,7 @@ Click on the Lock icon to open Secrets and enter the key \(**CLOUDINARY\_URL**\)
 
 **NOTE: If you share the URL to your own REPL.IT  sandbox and it contains a secret, no one will be able to see your secrets.  They are only visible to the person who created them.  The person you share with will need to fork the sandbox just like you did above.**
 
-[Extra: Using External Config Files](../using-external-config-files.md)
+[Extra: Using External Config Files](using-external-config-files.md)
 
  [Return to Node.js Setup](../node-setup/)
 

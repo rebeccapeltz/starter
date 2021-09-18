@@ -8,7 +8,7 @@ description: >-
 
 
 
-The CLOUDINARY\_URL contains all of the credentials you need to provide security \(APIKEY\), identify yourself \(API\_KEY\) and identify your cloud \(CLOUD\_NAME\).  They are capitalized in the URL but you'll reference them as lowercase in your code.
+The CLOUDINARY\_URL contains all of the credentials you need to provide security \(API\_SECRET\), identify yourself \(API\_KEY\) and identify your cloud \(CLOUD\_NAME\).  They are capitalized in the URL but you'll reference them as lowercase in your code.
 
 You can locate the command shell in the sandbox and execute the following command to add CLOUDINARY\_URL to your application context. Substitute the CLOUDINARY\_URL from your Cloudinary dashboard to access your cloud programatically.  Notice that the export contains a Key/Value pair where CLOUDINARY\_URL is the key and cloudinary://APIKEY:API\_SECRET@CLOUDNAME is the value.
 

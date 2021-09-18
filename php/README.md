@@ -2,7 +2,7 @@
 description: Getting started with Cloudinary and PHP.
 ---
 
-# PHP
+# JavaScript SDK
 
 [PHP Setup Starter](setup.md)
 

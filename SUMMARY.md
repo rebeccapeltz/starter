@@ -2,7 +2,7 @@
 
 * [SDK Startup Guide](README.md)
 * [Cloudinary Account](cloudinary-account.md)
-* [Node.js](node.js/README.md)
+* [Node.js SDK](node.js/README.md)
   * [REPL.IT Code Sandbox](node.js/using-the-repl.it-code-sandbox/README.md)
     * [Using Credentials on the Command Line](node.js/using-the-repl.it-code-sandbox/using-credentials-on-the-command-line.md)
     * [Using Credentials in SECRETS](node.js/using-the-repl.it-code-sandbox/using-credentials-in-secrets.md)
@@ -14,7 +14,7 @@
     * [Transform for Optimization](node.js/node-setup/transform-for-optimization.md)
     * [Transform for Aesthetics](node.js/node-setup/transform-for-aesthetics.md)
     * [Deliver](node.js/node-setup/delivering-media.md)
-* [PHP](php/README.md)
+* [JavaScript SDK](php/README.md)
   * [REPL.IT Code Sandbox](php/repl.it-code-sandbox.md)
   * [Setup](php/setup.md)
 

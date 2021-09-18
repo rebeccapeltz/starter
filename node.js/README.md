@@ -2,7 +2,7 @@
 description: Getting Started with Cloudinary and  Node.js
 ---
 
-# Node.js SDK
+# Node.js
 
 The tutorial assumes that you have a free [Cloudinary Account](https://www.cloudinary.com/console) and know how to access our credentials from the shell.
 

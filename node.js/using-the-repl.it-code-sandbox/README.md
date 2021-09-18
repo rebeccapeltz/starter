@@ -26,7 +26,7 @@ The image below shows where to add your credentials in the REPL.IT sandbox.
 
 [Using Credentials in an External Config File](using-external-config-files.md)
 
-[Return to Setup](../node-setup/)
+[Return to Setup](../node-setup.md)
 
 ### 
 
